@@ -144,5 +144,5 @@ for a in range(len(ANOS)):
 print(df2)
 print(df3)
 # Salva os DataFrames em arquivos Excel
-df3.to_excel("excel_arquivos/autores_total1.xlsx")
-df2.to_excel("excel_arquivos/artigos_total1.xlsx")
+df3.to_excel("excel_arquivos/autores_total.xlsx")
+df2.to_excel("excel_arquivos/artigos_total.xlsx")
