@@ -2,28 +2,6 @@ import pandas as pd
 from fuzzywuzzy import fuzz, process
 import re
 
-def preprocess_text(text):
-    # Remover pontuações e caracteres especiais
-    text = re.sub('[^a-zA-Z]', ' ', text)
-    
-    # Converter todas as letras para minúsculas
-    text = text.lower()
-    
-    # Tokenizar o texto em palavras
-    tokens = word_tokenize(text)
-    
-    # Remover stopwords
-    stop_words = set(stopwords.words('portuguese'))  # ou 'english' para stopwords em inglês
-    tokens = [word for word in tokens if word not in stop_words]
-    
-    # Aplicar stemming (opcional)
-    stemmer = PorterStemmer()
-    tokens = [stemmer.stem(word) for word in tokens]
-    
-    # Juntar as palavras novamente em uma única string
-    preprocessed_text = ' '.join(tokens)
-    
-    return preprocessed_text
 
 # Carregar o arquivo Excel em um dataframe
 df = pd.read_excel(r"excel_arquivos/artigos_total.xlsx")
