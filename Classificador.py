@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 
 # Carregar o arquivo Excel em um dataframe
-df = pd.read_excel("areas_pesquisa_com_CAPES.xlsx")
+df = pd.read_excel("dados_limpos.xlsx")
 
 X = df["PALAVRAS_CHAVE"]
 y = df['Area_CAPES']
@@ -28,3 +28,14 @@ predictions = clf.predict(new_data)
 
 # Imprimir as predições
 print(predictions)
+# Imprimir a previsão
+print("Previsão:", predictions[0])
+
+# Calcular a porcentagem de acerto da previsão
+probabilities = clf.predict_proba(new_data)[0]
+max_probability = max(probabilities)
+accuracy = max_probability * 100
+
+# Imprimir a porcentagem de acerto
+print("Porcentagem de acerto: {:.2f}%".format(accuracy))
+
