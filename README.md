@@ -1,8 +1,17 @@
 
 # Classificador de Artigos Científicos
 
-O classificador utiliza de métodos de webscrapping para busca e estruturação de dados, mineração de texto, pré processamento, análise e predição dos dados. Aplicando o modelo Naive Bayes para classificar artigos científicos com base em suas palavras-chave.
+O classificador utiliza de metodos de webscrapping para busca e estruturação de dados, mineração de texto, pré processamento, analise e predição dos dados. Aplicando o modelo Naive Bayes para classificar aritigos cientificos com base em suas palavras-chave.
 
+
+## Validação de modelos
+![App Screenshot](https://github.com/guilhermefabio/ClassificadorAritgosENGEP/blob/main/Screenshots/Metricas_entre_modelos.png?raw=true)
+
+## Modelo Baseado em Dados Brutos
+![App Screenshot](https://github.com/guilhermefabio/ClassificadorAritgosENGEP/blob/main/Screenshots/ModeloOrigninalMatriz.png?raw=true)
+
+## Modelo Baseado em Dados Limpos (Delete Overfitting)
+![App Screenshot](https://github.com/guilhermefabio/ClassificadorAritgosENGEP/blob/main/Screenshots/ModeloLimpoMatriz.png?raw=true)
 
 ## Autores
 
