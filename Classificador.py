@@ -15,23 +15,23 @@ vectorizer = CountVectorizer()
 X = vectorizer.fit_transform(X)
 
 # Criar o objeto MultinomialNB
-clf = MultinomialNB()
+Modelo = MultinomialNB()
 
 # Treinar o classificador
-clf.fit(X, y)
+Modelo.fit(X, y)
 
 # Fazer previsões com novos dados
-new_data = input("Insira os dados para previsão: ")
-new_data = vectorizer.transform([new_data])
-predictions = clf.predict(new_data)
+novos_dados = input("Insira os dados para previsão: ")
+novos_dados = vectorizer.transform([novos_dados])
+predicao = Modelo.predict(novos_dados)
 
 # Calcular a porcentagem de acerto da previsão
-probabilities = clf.predict_proba(new_data)[0]
-max_probability = max(probabilities)
-accuracy = max_probability * 100
+probabiliades = Modelo.predict_proba(novos_dados)[0]
+probabiliades_max = max(probabiliades)
+accuracy = probabiliades_max * 100
 
 # Imprimir a previsão
-print("Previsão:", predictions[0])
+print("Previsão:", predicao[0])
 
 # Imprimir a porcentagem de acerto
 print("Porcentagem de acerto: {:.2f}%".format(accuracy))
@@ -39,7 +39,7 @@ print("Porcentagem de acerto: {:.2f}%".format(accuracy))
 # Verificar se a porcentagem de acerto é maior que 91%
 if accuracy > 91:
     # Criar um dataframe com os dados da previsão
-    df_pred = pd.DataFrame({"Dados": new_data, "Previsão": predictions[0], "Porcentagem de Acerto": accuracy}, index=[0])
+    df_pred = pd.DataFrame({"Dados": novos_dados, "Previsão": predicao[0], "Porcentagem de Acerto": accuracy}, index=[0])
     
     # Anexar o dataframe de previsão ao arquivo Excel de dados
     with pd.ExcelWriter("dados_limpos.xlsx", mode="a") as writer:
