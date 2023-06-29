@@ -14,7 +14,7 @@ O classificador utiliza de metodos de webscrapping para busca e estruturação d
 ![App Screenshot](https://github.com/guilhermefabio/ClassificadorAritgosENGEP/blob/main/Screenshots/ModeloLimpoMatriz.png?raw=true)
 
 ## Estrutura do Projeto
-![App Screenshot](https://github.com/guilhermefabio/ClassificadorArtigosENGEP/blob/main/Screenshots/diagrama%20modelo.drawio%20(2).pngraw=true)
+![App Screenshot](https://github.com/guilhermefabio/ClassificadorArtigosENGEP/blob/main/Screenshots/diagrama%20modelo.drawio%20(2).png?raw=true)
 
 
 
