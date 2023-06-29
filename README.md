@@ -13,6 +13,9 @@ O classificador utiliza de metodos de webscrapping para busca e estruturação d
 ## Modelo Baseado em Dados Limpos (Delete Overfitting)
 ![App Screenshot](https://github.com/guilhermefabio/ClassificadorAritgosENGEP/blob/main/Screenshots/ModeloLimpoMatriz.png?raw=true)
 
+## Estrutura do Projeto
+![App Screenshot](https://github.com/guilhermefabio/ClassificadorArtigosENGEP/blob/main/Screenshots/diagrama_Modelo.png?raw=true)
+
 ## Autores
 
 - [@guilhermefabio](https://www.github.com/guilhermefabio)
